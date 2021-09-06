@@ -1,0 +1,65 @@
+@media screen{
+:root{
+	font-size:18px;
+	font-family: Calibry, arial;
+}
+.parent {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+.logo{
+	position: relative;
+	left: 1em;
+	top: .5em;
+	bottom: .5em;
+	float: left;
+}
+header{
+	min-height: calc(100px + 1rem);
+	background-color: orange;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+.sections>*,.languages>*{
+	display: inline-block;
+	font-size: calc(0.5rem + 1.5vw);
+	padding: .5rem;
+}
+.sections,.languages{
+	position:relative;
+	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.sections{
+	position: absolute;
+	left: calc(100px + 1em);
+}
+.languages{
+	position: absolute;
+	right: 1em;
+	left: auto;
+	display: block;
+	width: max-content;
+}
+.sections a,.languages a{
+	color: white;
+	transition: all ease-out .3s;
+} .sections a:visited,.languages a:visited{
+	color: #eee;
+} .sections a:hover,.languages a:hover{
+	color: black;
+} .sections a:active,.languages a:active{
+	color: #555;
+}
+.parent>*{
+	padding: 1em;
+	font-size: 1.25rem;
+}
+
+}
